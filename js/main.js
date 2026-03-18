@@ -72,14 +72,14 @@
     var rooms   = document.getElementById('f-rooms').value;
     var date    = document.getElementById('f-date').value;
     var message = document.getElementById('f-message').value;
-    var text = 'Hi Shaadistays! I\'m looking for wedding hotel assistance.\n\nName: ' + name +
+    var text = 'Hi ShaadiStays! I\'m looking for wedding hotel assistance.\n\nName: ' + name +
                '\nPhone: ' + phone +
                (email ? '\nEmail: ' + email : '') +
                (hotel ? '\nHotel: ' + hotel : '') +
                (rooms ? '\nRooms: ' + rooms : '') +
                (date  ? '\nDate: ' + date : '') +
                (message ? '\nMessage: ' + message : '');
-    window.open('https://wa.me/919999999999?text=' + encodeURIComponent(text), '_blank');
+    window.open('https://wa.me/918979636730?text=' + encodeURIComponent(text), '_blank');
     form.style.display = 'none';
     if (success) success.style.display = 'block';
   });
@@ -87,7 +87,7 @@
 
 /* ---- Chatbot ---- */
 (function () {
-  var WHATSAPP = '919999999999';
+  var WHATSAPP = '918979636730';
   var questions = [
     {
       text: "Hey! 👋 Planning a wedding? I can help you save 10–40% on hotel stays. What are you looking for?",
@@ -143,7 +143,7 @@
       waBtn.className = 'btn-wa-full';
       waBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Continue on WhatsApp <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>';
       waBtn.addEventListener('click', function () {
-        var text = 'Hi Shaadistays! I\'m looking for:\n• Service: ' + (answers[0] || 'N/A') +
+        var text = 'Hi ShaadiStays! I\'m looking for:\n• Service: ' + (answers[0] || 'N/A') +
                    '\n• Rooms: ' + (answers[1] || 'N/A') +
                    '\n• Timeline: ' + (answers[2] || 'N/A') +
                    '\n\nPlease help me get the best rates!';
