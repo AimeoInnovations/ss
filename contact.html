@@ -7,6 +7,76 @@
   <meta name="description" content="Contact ShaadiStays to get a free hotel quote negotiation for your wedding. Share your quote and save 10–40%." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .req-star { color: var(--gold-dark); }
+
+    /* Checkbox */
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      cursor: pointer;
+      font-size: 0.9375rem;
+      color: var(--fg);
+      user-select: none;
+    }
+    .checkbox-label input[type="checkbox"] { display: none; }
+    .checkbox-box {
+      width: 20px; height: 20px; flex-shrink: 0;
+      border: 2px solid var(--border);
+      border-radius: 5px;
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .checkbox-label input[type="checkbox"]:checked + .checkbox-box {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+    .checkbox-label input[type="checkbox"]:checked + .checkbox-box::after {
+      content: '';
+      display: block;
+      width: 5px; height: 9px;
+      border: 2px solid #fff;
+      border-top: none; border-left: none;
+      transform: rotate(45deg) translateY(-1px);
+    }
+
+    /* Validation error state */
+    .form-group input.invalid { border-color: hsl(0, 70%, 55%); }
+    .error-msg {
+      font-size: 0.75rem;
+      color: hsl(0, 65%, 50%);
+      margin-top: 0.25rem;
+      display: none;
+    }
+    .error-msg.show { display: block; }
+
+    /* Quote reminder banner */
+    .quote-reminder {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.875rem 1rem;
+      background: hsl(38, 65%, 55%, 0.08);
+      border: 1px solid hsl(38, 65%, 55%, 0.25);
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+    }
+    .quote-reminder svg {
+      width: 18px; height: 18px; flex-shrink: 0;
+      fill: none; stroke: var(--gold-dark);
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+      margin-top: 1px;
+    }
+    .quote-reminder p {
+      font-size: 0.8125rem;
+      color: var(--fg);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .quote-reminder strong { color: var(--gold-dark); }
+  </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,41 +193,71 @@
       <div class="fade-in" style="transition-delay:0.15s">
         <div class="contact-form" id="form-container">
           <form id="contact-form" novalidate>
+
+            <!-- Row 1: Name + Phone -->
             <div class="form-row" style="margin-bottom:1.25rem">
               <div class="form-group">
-                <label for="f-name">Your Name *</label>
-                <input type="text" id="f-name" required placeholder="Full name" />
+                <label for="f-name">Your Name</label>
+                <input type="text" id="f-name" placeholder="Full name" />
               </div>
               <div class="form-group">
-                <label for="f-phone">Phone *</label>
+                <label for="f-phone">WhatsApp Number <span class="req-star">*</span></label>
                 <input type="tel" id="f-phone" required placeholder="+91 XXXXX XXXXX" />
+                <span class="error-msg" id="err-phone"></span>
               </div>
             </div>
-            <div class="form-group" style="margin-bottom:1.25rem">
-              <label for="f-email">Email</label>
-              <input type="email" id="f-email" placeholder="your@email.com" />
-            </div>
+
+            <!-- Row 2: Hotel + Rooms -->
             <div class="form-row" style="margin-bottom:1.25rem">
               <div class="form-group">
-                <label for="f-hotel">Hotel Name</label>
-                <input type="text" id="f-hotel" placeholder="e.g., Taj Palace, Delhi" />
+                <label for="f-hotel">Hotel Name <span class="req-star">*</span></label>
+                <input type="text" id="f-hotel" required placeholder="e.g., Taj Palace, Delhi" />
+                <span class="error-msg" id="err-hotel"></span>
               </div>
               <div class="form-group">
                 <label for="f-rooms">No. of Rooms</label>
-                <input type="text" id="f-rooms" placeholder="e.g., 50" />
+                <input type="number" id="f-rooms" min="1" placeholder="e.g., 50" />
               </div>
             </div>
+
+            <!-- Row 3: Days + Wedding Date -->
+            <div class="form-row" style="margin-bottom:1.25rem">
+              <div class="form-group">
+                <label for="f-days">No. of Days</label>
+                <input type="number" id="f-days" min="1" placeholder="e.g., 3" />
+              </div>
+              <div class="form-group">
+                <label for="f-date">Wedding Date <span class="req-star">*</span></label>
+                <input type="date" id="f-date" required />
+                <span class="error-msg" id="err-date"></span>
+              </div>
+            </div>
+
+            <!-- F&B checkbox -->
             <div class="form-group" style="margin-bottom:1.25rem">
-              <label for="f-date">Wedding Date</label>
-              <input type="date" id="f-date" />
+              <label class="checkbox-label">
+                <input type="checkbox" id="f-fnb" />
+                <span class="checkbox-box"></span>
+                F&amp;B / Banquet negotiation required
+              </label>
             </div>
-            <div class="form-group" style="margin-bottom:1.5rem">
+
+            <!-- Additional details -->
+            <div class="form-group" style="margin-bottom:1.25rem">
               <label for="f-message">Additional Details</label>
-              <textarea id="f-message" rows="3" placeholder="Tell us about your requirements..."></textarea>
+              <textarea id="f-message" rows="3" placeholder="Any other requirements or context..."></textarea>
             </div>
-            <p style="font-size:0.75rem; color:var(--muted-fg); margin-bottom:0.5rem;">By submitting, you agree to our <a href="privacy-policy.html" style="color:var(--gold-dark);">Privacy Policy</a> and <a href="terms.html" style="color:var(--gold-dark);">Terms &amp; Conditions</a>.</p>
+
+            <!-- Quote attachment reminder -->
+            <div class="quote-reminder">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <p><strong>Please attach your hotel quote</strong> in the WhatsApp chat once it opens — a screenshot of your WhatsApp/email quote or a PDF quote. <em>Only verifiable quotes accepted.</em></p>
+            </div>
+
+            <p style="font-size:0.75rem; color:var(--muted-fg); margin-bottom:0.75rem;">By submitting, you agree to our <a href="privacy-policy.html" style="color:var(--gold-dark);">Privacy Policy</a> and <a href="terms.html" style="color:var(--gold-dark);">Terms &amp; Conditions</a>.</p>
+
             <button type="submit" class="form-submit">
-              <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
               Send via WhatsApp
             </button>
           </form>
@@ -166,10 +266,11 @@
         <!-- Success state -->
         <div class="contact-form form-success" id="form-success" style="display:none">
           <div class="success-icon">
-            <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
-          <h3>We're on it!</h3>
-          <p>Your details have been sent via WhatsApp. Our team will respond within 24 hours.</p>
+          <h3>WhatsApp is opening!</h3>
+          <p>Your details are pre-filled in the message. <strong>Please attach your hotel quote</strong> (screenshot or PDF) in the same chat before hitting Send.</p>
+          <p style="margin-top:0.75rem; font-size:0.8125rem; color:var(--muted-fg);">Our team will respond within 24 hours once we receive your quote.</p>
         </div>
       </div>
 
@@ -242,5 +343,81 @@
 </div>
 
 <script src="js/main.js"></script>
+<script>
+/* ---- Contact form → WhatsApp ---- */
+(function () {
+  var form    = document.getElementById('contact-form');
+  var success = document.getElementById('form-success');
+  if (!form) return;
+
+  function setError(inputId, errId, msg) {
+    var el  = document.getElementById(inputId);
+    var err = document.getElementById(errId);
+    if (el)  el.classList.add('invalid');
+    if (err) { err.textContent = msg; err.classList.add('show'); }
+  }
+  function clearError(inputId, errId) {
+    var el  = document.getElementById(inputId);
+    var err = document.getElementById(errId);
+    if (el)  el.classList.remove('invalid');
+    if (err) err.classList.remove('show');
+  }
+
+  /* Clear on input */
+  document.getElementById('f-phone').addEventListener('input', function () { clearError('f-phone', 'err-phone'); });
+  document.getElementById('f-hotel').addEventListener('input', function () { clearError('f-hotel', 'err-hotel'); });
+  document.getElementById('f-date').addEventListener('change', function () { clearError('f-date',  'err-date');  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var phone   = document.getElementById('f-phone').value.trim();
+    var hotel   = document.getElementById('f-hotel').value.trim();
+    var date    = document.getElementById('f-date').value;
+    var name    = document.getElementById('f-name').value.trim();
+    var rooms   = document.getElementById('f-rooms').value.trim();
+    var days    = document.getElementById('f-days').value.trim();
+    var fnb     = document.getElementById('f-fnb').checked;
+    var message = document.getElementById('f-message').value.trim();
+
+    /* Validate */
+    var valid = true;
+    if (!phone) { setError('f-phone', 'err-phone', 'WhatsApp number is required'); valid = false; }
+    if (!hotel) { setError('f-hotel', 'err-hotel', 'Hotel name is required');       valid = false; }
+    if (!date)  { setError('f-date',  'err-date',  'Wedding date is required');     valid = false; }
+    if (!valid) return;
+
+    /* Format date */
+    var displayDate = date;
+    try {
+      var d = new Date(date + 'T00:00:00');
+      displayDate = d.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+    } catch (err) {}
+
+    /* Build WhatsApp message */
+    var lines = [
+      'Hi ShaadiStays! I\'d like to get a better hotel rate for my wedding.',
+      '',
+      '📋 *My Booking Details:*',
+    ];
+    if (name)  lines.push('👤 Name: ' + name);
+    lines.push('📱 WhatsApp: ' + phone);
+    lines.push('🏨 Hotel: ' + hotel);
+    if (rooms) lines.push('🛏 No. of Rooms: ' + rooms);
+    if (days)  lines.push('📅 No. of Days: ' + days);
+    lines.push('💍 Wedding Date: ' + displayDate);
+    lines.push('🍽 F&B / Banquet Required: ' + (fnb ? 'Yes' : 'No'));
+    if (message) lines.push('📝 Additional Details: ' + message);
+    lines.push('');
+    lines.push('📎 *(Attaching my hotel quote in this chat)*');
+
+    var text = lines.join('\n');
+    window.open('https://wa.me/918979636730?text=' + encodeURIComponent(text), '_blank');
+
+    document.getElementById('form-container').style.display = 'none';
+    success.style.display = 'block';
+  });
+})();
+</script>
 </body>
 </html>
