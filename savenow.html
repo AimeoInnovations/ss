@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SME0163NPY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SME0163NPY');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save 10–40% on Your Wedding Hotel — ShaadiStays</title>
+  <meta name="description" content="400+ wedding families have saved ₹12.5 Crore with ShaadiStays. We negotiate your hotel quote — rooms & banquet. No savings, no fee. Get your free quote in 60 seconds." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================
+       CSS RESET & BASE
+    ============================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: hsl(30, 33%, 97%);
+      color: hsl(350, 15%, 15%);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    ul { list-style: none; }
+
+    /* ============================
+       CSS VARIABLES
+    ============================ */
+    :root {
+      --bg:         hsl(30, 33%, 97%);
+      --fg:         hsl(350, 15%, 15%);
+      --card:       hsl(30, 25%, 95%);
+      --primary:    hsl(345, 45%, 30%);
+      --primary-fg: hsl(30, 33%, 97%);
+      --secondary:  hsl(30, 25%, 90%);
+      --muted-fg:   hsl(350, 8%, 45%);
+      --border:     hsl(30, 18%, 85%);
+      --gold:       hsl(38, 65%, 55%);
+      --gold-light: hsl(38, 55%, 75%);
+      --gold-dark:  hsl(38, 70%, 40%);
+      --wine:       hsl(345, 45%, 30%);
+      --wine-dark:  hsl(345, 50%, 20%);
+      --green:      hsl(142, 70%, 40%);
+      --radius:     0.75rem;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    /* ============================
+       LAYOUT
+    ============================ */
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    .section    { padding: 5rem 0; }
+    .section-sm { padding: 3.5rem 0; }
+
+    /* ============================
+       MINIMAL STICKY HEADER
+    ============================ */
+    .lp-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: hsl(30, 33%, 97%, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid hsl(30, 18%, 85%, 0.6);
+    }
+    .lp-header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .lp-logo {
+      font-family: var(--font-display);
+      font-size: 1.375rem; font-weight: 700;
+      color: var(--primary);
+    }
+    .lp-logo span { color: var(--gold); }
+    .lp-header-ctas { display: flex; align-items: center; gap: 0.75rem; }
+    .lp-header-phone {
+      display: none;
+      align-items: center; gap: 0.5rem;
+      font-size: 0.875rem; font-weight: 600;
+      color: var(--primary);
+    }
+    @media (min-width: 640px) { .lp-header-phone { display: flex; } }
+    .lp-header-phone svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .btn-header-wa {
+      display: flex; align-items: center; gap: 0.5rem;
+      background: var(--green); color: #fff;
+      padding: 0.5rem 1.125rem; border-radius: 999px;
+      font-size: 0.8125rem; font-weight: 600;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .btn-header-wa:hover { opacity: 0.88; }
+    .btn-header-wa svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ============================
+       HERO
+    ============================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding-top: 60px;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        105deg,
+        hsl(350, 15%, 8%, 0.88) 0%,
+        hsl(345, 45%, 20%, 0.78) 45%,
+        hsl(345, 45%, 20%, 0.45) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      max-width: 640px;
+      padding: 4rem 0;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: hsl(38, 65%, 55%, 0.18);
+      border: 1px solid hsl(38, 65%, 55%, 0.35);
+      color: hsl(38, 85%, 72%);
+      padding: 0.375rem 1rem; border-radius: 999px;
+      font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+    .eyebrow-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: hsl(38, 85%, 72%);
+      animation: pulse-dot 2s ease infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.7); }
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.25rem, 6.5vw, 3.875rem);
+      font-weight: 700; line-height: 1.12;
+      color: hsl(30, 33%, 97%);
+    }
+    .hero h1 .accent {
+      color: var(--gold);
+      font-style: italic;
+    }
+    .hero-sub {
+      margin-top: 1.25rem;
+      color: hsl(30, 33%, 97%, 0.78);
+      font-size: clamp(1rem, 2.5vw, 1.125rem);
+      line-height: 1.7; max-width: 500px;
+    }
+
+    /* Trust strip in hero */
+    .hero-trust {
+      margin-top: 2rem;
+      display: flex; flex-wrap: wrap; gap: 1.25rem;
+    }
+    .trust-chip {
+      display: flex; align-items: center; gap: 0.5rem;
+      background: hsl(30, 33%, 97%, 0.1);
+      border: 1px solid hsl(30, 33%, 97%, 0.2);
+      color: hsl(30, 33%, 97%, 0.88);
+      padding: 0.4rem 0.875rem; border-radius: 999px;
+      font-size: 0.8125rem; font-weight: 500;
+    }
+    .trust-chip svg { width: 14px; height: 14px; fill: none; stroke: var(--gold); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+    /* CTA block in hero */
+    .hero-ctas {
+      margin-top: 2.5rem;
+      display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
+    }
+    .btn-wa-hero {
+      display: inline-flex; align-items: center; gap: 0.625rem;
+      background: var(--green); color: #fff;
+      padding: 0.9375rem 2rem; border-radius: var(--radius);
+      font-size: 1rem; font-weight: 700;
+      box-shadow: 0 4px 24px hsl(142, 70%, 40%, 0.35);
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn-wa-hero:hover { opacity: 0.92; transform: translateY(-1px); }
+    .btn-wa-hero svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .btn-scroll {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: hsl(30, 33%, 97%, 0.8);
+      font-size: 0.9375rem; font-weight: 500;
+      border: 1px solid hsl(30, 33%, 97%, 0.25);
+      padding: 0.9375rem 1.75rem; border-radius: var(--radius);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-scroll:hover { background: hsl(30, 33%, 97%, 0.08); color: #fff; }
+
+    /* Hero guarantee line */
+    .hero-guarantee {
+      margin-top: 1.5rem;
+      display: flex; align-items: center; gap: 0.5rem;
+      color: hsl(30, 33%, 97%, 0.6);
+      font-size: 0.8125rem;
+    }
+    .hero-guarantee svg { width: 14px; height: 14px; fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+    /* ============================
+       SOCIAL PROOF BANNER
+    ============================ */
+    .proof-banner { background: var(--wine); padding: 2.5rem 0; }
+    .proof-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+      text-align: center;
+    }
+    .proof-item {
+      flex: 1 1 140px;
+      padding: 1rem 1.5rem;
+      position: relative;
+    }
+    .proof-item + .proof-item::before {
+      content: '';
+      position: absolute; left: 0; top: 50%;
+      transform: translateY(-50%);
+      height: 40px; width: 1px;
+      background: hsl(30, 33%, 97%, 0.15);
+    }
+    @media (max-width: 480px) {
+      .proof-item { flex: 1 1 45%; }
+      .proof-item + .proof-item::before { display: none; }
+    }
+    .proof-item .num {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 5vw, 2.75rem);
+      font-weight: 700; color: var(--gold); line-height: 1;
+    }
+    .proof-item .label {
+      margin-top: 0.375rem;
+      font-size: 0.8125rem; color: hsl(30, 33%, 97%, 0.65);
+      line-height: 1.4;
+    }
+
+    /* ============================
+       PROBLEM → SOLUTION SECTION
+    ============================ */
+    .problem-bg { background: var(--card); }
+    .problem-headline {
+      text-align: center; margin-bottom: 3rem;
+    }
+    .section-eyebrow {
+      display: inline-block;
+      padding: 0.3rem 0.9rem; border-radius: 999px;
+      background: hsl(38, 65%, 55%, 0.1);
+      color: var(--gold-dark);
+      font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 0.875rem;
+    }
+    .problem-headline h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700; color: var(--fg); line-height: 1.2;
+    }
+    .problem-headline p {
+      margin-top: 0.75rem; color: var(--muted-fg);
+      font-size: 1rem; max-width: 520px; margin-left: auto; margin-right: auto;
+      line-height: 1.75;
+    }
+    .vs-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 1.5rem; max-width: 820px; margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .vs-grid { grid-template-columns: 1fr auto 1fr; align-items: start; }
+    }
+    .vs-col-bad {
+      background: hsl(0, 0%, 100%);
+      border: 1px solid hsl(0, 60%, 88%);
+      border-radius: 1rem; padding: 1.5rem;
+    }
+    .vs-col-good {
+      background: hsl(345, 45%, 30%);
+      border-radius: 1rem; padding: 1.5rem;
+    }
+    .vs-col-title {
+      font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .vs-col-bad .vs-col-title { color: hsl(0, 60%, 45%); }
+    .vs-col-good .vs-col-title { color: var(--gold); }
+    .vs-item {
+      display: flex; align-items: flex-start; gap: 0.625rem;
+      margin-bottom: 0.875rem; font-size: 0.9rem; line-height: 1.5;
+    }
+    .vs-item:last-child { margin-bottom: 0; }
+    .vs-col-bad .vs-item { color: hsl(350, 15%, 30%); }
+    .vs-col-good .vs-item { color: hsl(30, 33%, 90%); }
+    .vs-icon { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .vs-icon-bad  { stroke: hsl(0, 60%, 55%); }
+    .vs-icon-good { stroke: var(--gold); }
+    .vs-divider {
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--muted-fg);
+    }
+    @media (min-width: 768px) { .vs-divider { padding-top: 3rem; } }
+
+    /* ============================
+       HOW IT WORKS
+    ============================ */
+    .steps-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 0; counter-reset: step;
+    }
+    @media (min-width: 768px) { .steps-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .step {
+      position: relative;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .step:not(:last-child)::after {
+        content: '';
+        position: absolute; top: 2.75rem; right: -1px;
+        width: 1px; height: 40px;
+        background: var(--border);
+      }
+    }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: hsl(38, 65%, 55%, 0.1);
+      border: 2px solid hsl(38, 65%, 55%, 0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.125rem; font-weight: 700;
+      color: var(--gold-dark);
+      margin: 0 auto 1rem;
+    }
+    .step h3 { font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; color: var(--fg); }
+    .step p { margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted-fg); line-height: 1.7; }
+    .step-time {
+      display: inline-block; margin-top: 0.75rem;
+      padding: 0.25rem 0.75rem; border-radius: 999px;
+      background: hsl(38, 65%, 55%, 0.08);
+      font-size: 0.75rem; font-weight: 600; color: var(--gold-dark);
+    }
+
+    /* ============================
+       OBJECTION CRUSHERS / WHY
+    ============================ */
+    .why-bg { background: var(--card); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 1rem; max-width: 860px; margin: 0 auto;
+    }
+    @media (min-width: 640px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+    .why-card {
+      display: flex; align-items: flex-start; gap: 1rem;
+      background: hsl(30, 33%, 97%);
+      border: 1px solid var(--border); border-radius: 1rem;
+      padding: 1.375rem;
+      transition: box-shadow 0.2s;
+    }
+    .why-card:hover { box-shadow: 0 4px 20px hsl(345, 45%, 30%, 0.08); }
+    .why-icon {
+      width: 44px; height: 44px; border-radius: 0.75rem;
+      background: hsl(38, 65%, 55%, 0.1);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .why-card:hover .why-icon { background: hsl(38, 65%, 55%, 0.18); }
+    .why-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--gold-dark); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .why-card h3 { font-size: 1rem; font-weight: 600; color: var(--fg); }
+    .why-card p { margin-top: 0.25rem; font-size: 0.8125rem; color: var(--muted-fg); line-height: 1.65; }
+
+    /* ============================
+       SOCIAL PROOF / TESTIMONIALS
+    ============================ */
+    .reviews-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 1.25rem; max-width: 900px; margin: 0 auto;
+    }
+    @media (min-width: 768px) { .reviews-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .review-card {
+      background: hsl(30, 33%, 97%);
+      border: 1px solid var(--border); border-radius: 1rem;
+      padding: 1.5rem;
+    }
+    .review-stars { display: flex; gap: 3px; margin-bottom: 0.875rem; }
+    .review-stars svg { width: 14px; height: 14px; fill: var(--gold); stroke: none; }
+    .review-text { font-size: 0.9rem; color: var(--fg); line-height: 1.7; font-style: italic; }
+    .review-text strong { font-style: normal; color: var(--gold-dark); }
+    .review-author { margin-top: 1.125rem; display: flex; align-items: center; gap: 0.75rem; }
+    .review-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--wine); display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 0.875rem; font-weight: 700;
+      color: var(--gold-light); flex-shrink: 0;
+    }
+    .review-name { font-size: 0.875rem; font-weight: 600; color: var(--fg); }
+    .review-meta { font-size: 0.75rem; color: var(--muted-fg); }
+    .review-saving {
+      margin-top: 1rem; padding: 0.5rem 0.75rem; border-radius: 0.5rem;
+      background: hsl(142, 70%, 40%, 0.07);
+      border: 1px solid hsl(142, 70%, 40%, 0.15);
+      font-size: 0.75rem; font-weight: 600; color: hsl(142, 65%, 28%);
+    }
+
+    /* ============================
+       FAQ MINI
+    ============================ */
+    .faq-mini-list { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.5rem; }
+    .faq-mini-item { border: 1px solid var(--border); border-radius: 0.75rem; overflow: hidden; }
+    .faq-mini-q {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.25rem; text-align: left; cursor: pointer;
+      background: hsl(30, 33%, 97%); transition: background 0.2s;
+    }
+    .faq-mini-q:hover { background: hsl(30, 25%, 95%); }
+    .faq-mini-q span { font-size: 0.9375rem; font-weight: 600; color: var(--fg); }
+    .faq-mini-q svg { width: 18px; height: 18px; fill: none; stroke: var(--muted-fg); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; transition: transform 0.3s; }
+    .faq-mini-item.open .faq-mini-q svg { transform: rotate(180deg); }
+    .faq-mini-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding: 0 1.25rem; }
+    .faq-mini-item.open .faq-mini-a { max-height: 200px; padding: 0 1.25rem 1rem; }
+    .faq-mini-a p { font-size: 0.875rem; color: var(--muted-fg); line-height: 1.75; }
+
+    /* ============================
+       FINAL CTA SECTION
+    ============================ */
+    .final-cta {
+      background: var(--wine);
+      padding: 5rem 0; text-align: center;
+    }
+    .final-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.875rem, 4.5vw, 3rem);
+      font-weight: 700; color: hsl(30, 33%, 97%);
+    }
+    .final-cta h2 em { font-style: italic; color: var(--gold); }
+    .final-cta p {
+      margin-top: 1rem; color: hsl(30, 33%, 97%, 0.72);
+      font-size: 1rem; max-width: 460px; margin-left: auto; margin-right: auto; line-height: 1.7;
+    }
+    .final-cta-btns { margin-top: 2.25rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .btn-wa-big {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: var(--green); color: #fff;
+      padding: 1.0625rem 2.25rem; border-radius: var(--radius);
+      font-size: 1.0625rem; font-weight: 700;
+      box-shadow: 0 4px 24px hsl(142, 70%, 40%, 0.4);
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn-wa-big:hover { opacity: 0.9; transform: translateY(-2px); }
+    .btn-wa-big svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .btn-call-big {
+      display: inline-flex; align-items: center; gap: 0.625rem;
+      border: 1px solid hsl(30, 33%, 97%, 0.3); color: hsl(30, 33%, 97%);
+      padding: 1.0625rem 2rem; border-radius: var(--radius);
+      font-size: 1.0625rem; font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-call-big:hover { background: hsl(30, 33%, 97%, 0.08); }
+    .btn-call-big svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .final-guarantee {
+      margin-top: 1.5rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      color: hsl(30, 33%, 97%, 0.55); font-size: 0.8125rem;
+    }
+    .final-guarantee svg { width: 14px; height: 14px; fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; align-self: flex-start; margin-top: 2px; }
+
+    /* ============================
+       STICKY BOTTOM BAR (mobile)
+    ============================ */
+    .sticky-bar {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: hsl(30, 33%, 97%, 0.97);
+      border-top: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.75rem 1.25rem;
+    }
+    @media (max-width: 767px) { .sticky-bar { display: block; } }
+    .sticky-bar-inner { display: flex; gap: 0.75rem; }
+    .sticky-btn-wa {
+      flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      background: var(--green); color: #fff;
+      padding: 0.8125rem; border-radius: var(--radius);
+      font-size: 0.9375rem; font-weight: 700;
+      transition: opacity 0.2s;
+    }
+    .sticky-btn-wa:hover { opacity: 0.9; }
+    .sticky-btn-wa svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .sticky-btn-call {
+      display: flex; align-items: center; justify-content: center;
+      width: 50px; height: 50px; border-radius: var(--radius);
+      background: var(--secondary); color: var(--fg); flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .sticky-btn-call:hover { background: var(--border); }
+    .sticky-btn-call svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ============================
+       FOOTER MINI
+    ============================ */
+    .lp-footer {
+      background: var(--wine); padding: 1.5rem 0;
+      border-top: 1px solid hsl(30, 33%, 97%, 0.1);
+    }
+    .lp-footer-inner {
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      text-align: center;
+    }
+    .lp-footer p { font-size: 0.75rem; color: hsl(30, 33%, 97%, 0.45); }
+    .lp-footer a { color: hsl(30, 33%, 97%, 0.55); text-decoration: underline; }
+    .lp-footer a:hover { color: hsl(30, 33%, 97%, 0.8); }
+
+    /* ============================
+       ANIMATIONS
+    ============================ */
+    .fade-up {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: none; }
+
+    /* Staggered delays */
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+
+    /* Mobile bottom padding for sticky bar */
+    @media (max-width: 767px) {
+      .final-cta { padding-bottom: 7rem; }
+    }
+
+    /* Counter animation helper */
+    .count-up { display: inline-block; }
+
+    /* ============================
+       SAVINGS CALCULATOR
+    ============================ */
+    .calc-wrap {
+      max-width: 620px; margin: 0 auto;
+      background: hsl(30, 33%, 97%);
+      border: 1px solid var(--border); border-radius: 1.25rem;
+      padding: 2rem;
+    }
+    .calc-wrap h3 {
+      font-family: var(--font-display); font-size: 1.25rem; font-weight: 600;
+      color: var(--fg); margin-bottom: 1.5rem; text-align: center;
+    }
+    .calc-row { margin-bottom: 1.25rem; }
+    .calc-row label {
+      display: block; font-size: 0.875rem; font-weight: 500;
+      color: var(--fg); margin-bottom: 0.375rem;
+    }
+    .calc-input {
+      width: 100%; padding: 0.625rem 1rem;
+      border: 1px solid var(--border); border-radius: 0.625rem;
+      background: var(--bg); font-family: 'DM Sans', sans-serif;
+      font-size: 0.9375rem; color: var(--fg); outline: none;
+      transition: border-color 0.2s;
+    }
+    .calc-input:focus { border-color: var(--wine); }
+    .calc-result {
+      margin-top: 1.5rem; padding: 1.25rem;
+      background: var(--wine); border-radius: 0.875rem;
+      text-align: center;
+    }
+    .calc-result .you-pay-label { font-size: 0.8125rem; color: hsl(30, 33%, 97%, 0.65); margin-bottom: 0.25rem; }
+    .calc-result .saving-amt {
+      font-family: var(--font-display); font-size: 2.25rem; font-weight: 700;
+      color: var(--gold); line-height: 1;
+    }
+    .calc-result .saving-sub { margin-top: 0.375rem; font-size: 0.8rem; color: hsl(30, 33%, 97%, 0.6); }
+    .calc-cta { margin-top: 1.25rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.625rem;
+      background: var(--green); color: #fff;
+      padding: 0.875rem; border-radius: 0.75rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9375rem; font-weight: 700;
+      cursor: pointer; transition: opacity 0.2s; border: none;
+    }
+    .calc-cta:hover { opacity: 0.88; }
+    .calc-cta svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+</head>
+<body>
+
+<!-- ===========================
+     STICKY HEADER
+=========================== -->
+<header class="lp-header">
+  <div class="container">
+    <div class="lp-header-inner">
+      <div class="lp-logo">Shaadi<span>Stays</span></div>
+      <div class="lp-header-ctas">
+        <a href="tel:+918979636730" class="lp-header-phone">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.72 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 89796 36730
+        </a>
+        <a href="https://wa.me/918979636730?text=Hi%20ShaadiStays!%20I%27d%20like%20to%20save%20on%20my%20wedding%20hotel%20booking." target="_blank" rel="noopener" class="btn-header-wa">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ===========================
+     HERO
+=========================== -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-wedding.jpg" alt="Luxury wedding venue" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow fade-up visible">
+        <span class="eyebrow-dot"></span>
+        Trusted by 400+ Wedding Families
+      </div>
+      <h1 class="fade-up visible delay-1">
+        Your Hotel Said<br/>
+        <span class="accent">₹X.</span> We'll Make<br/>
+        It <span class="accent">₹X Minus 40%.</span>
+      </h1>
+      <p class="hero-sub fade-up visible delay-2">
+        ShaadiStays negotiates 4★/5★ hotel room blocks &amp; banquet packages on your behalf. We've saved 400+ families over <strong style="color:hsl(38,85%,72%)">₹12.5 Crore</strong> — and we charge only when we save you money.
+      </p>
+      <div class="hero-trust fade-up visible delay-3">
+        <div class="trust-chip">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          No savings = No fee
+        </div>
+        <div class="trust-chip">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Results in 48 hrs
+        </div>
+        <div class="trust-chip">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          7,500+ hotels
+        </div>
+      </div>
+      <div class="hero-ctas fade-up visible delay-4">
+        <a href="https://wa.me/918979636730?text=Hi%20ShaadiStays!%20I%27d%20like%20to%20save%20on%20my%20wedding%20hotel.%20Can%20you%20help%3F" target="_blank" rel="noopener" class="btn-wa-hero">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Get My Free Quote Now
+        </a>
+        <a href="#how-it-works" class="btn-scroll">See How It Works</a>
+      </div>
+      <p class="hero-guarantee fade-up visible delay-4">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Zero risk — if we can't beat your quote, you pay nothing
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     PROOF BANNER
+=========================== -->
+<section class="proof-banner">
+  <div class="container">
+    <div class="proof-grid">
+      <div class="proof-item">
+        <div class="num">400+</div>
+        <div class="label">Wedding families<br/>saved with us</div>
+      </div>
+      <div class="proof-item">
+        <div class="num">₹12.5 Cr</div>
+        <div class="label">Total savings<br/>delivered</div>
+      </div>
+      <div class="proof-item">
+        <div class="num">10–40%</div>
+        <div class="label">Typical savings<br/>on hotel quotes</div>
+      </div>
+      <div class="proof-item">
+        <div class="num">48 hrs</div>
+        <div class="label">To get you a<br/>better rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     PROBLEM → SOLUTION
+=========================== -->
+<section class="section problem-bg" id="why">
+  <div class="container">
+    <div class="problem-headline fade-up">
+      <span class="section-eyebrow">The problem</span>
+      <h2>Hotels Charge Wedding Families<br/>Way More Than They Should</h2>
+      <p>Hotels quote premium rack rates to individual families — because they can. We flip that dynamic.</p>
+    </div>
+    <div class="vs-grid">
+      <div class="vs-col-bad fade-up">
+        <div class="vs-col-title">Without ShaadiStays</div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-bad" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Paying full rack rate — the same price tourists pay
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-bad" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          No idea if the quote is fair or inflated
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-bad" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Spending hours chasing hotel sales managers
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-bad" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Paying per-plate banquet rates that can be reduced
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-bad" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Lakhs left on the table — that could have been saved
+        </div>
+      </div>
+      <div class="vs-divider fade-up">VS</div>
+      <div class="vs-col-good fade-up">
+        <div class="vs-col-title">With ShaadiStays</div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-good" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          B2B contracted rates — what volume buyers pay
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-good" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          We benchmark your quote so savings are guaranteed
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-good" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          We handle all hotel negotiation and coordination
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-good" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Banquet F&amp;B packages renegotiated too
+        </div>
+        <div class="vs-item">
+          <svg class="vs-icon vs-icon-good" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Save 10–40% with zero risk. No savings = no fee.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     HOW IT WORKS
+=========================== -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="problem-headline fade-up">
+      <span class="section-eyebrow">Simple process</span>
+      <h2>Three Steps to a Cheaper Wedding Hotel</h2>
+      <p>Share your quote, we negotiate, you save. The whole thing takes less than 48 hours.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step fade-up">
+        <div class="step-num">1</div>
+        <h3>Share Your Hotel Quote</h3>
+        <p>Send us the official quote you've received from the hotel — via WhatsApp in seconds. Rooms, banquet, or both.</p>
+        <span class="step-time">Takes 60 seconds</span>
+      </div>
+      <div class="step fade-up delay-1">
+        <div class="step-num">2</div>
+        <h3>We Negotiate for You</h3>
+        <p>We use our B2B contracts with 7,500+ hotels to get you a rate that individual families can't access on their own.</p>
+        <span class="step-time">Within 48 hours</span>
+      </div>
+      <div class="step fade-up delay-2">
+        <div class="step-num">3</div>
+        <h3>You Save — or Pay Nothing</h3>
+        <p>If we beat your quote, you pay a small success fee (just 7–10% of your booking). If we can't beat it, you owe us zero.</p>
+        <span class="step-time">Zero risk</span>
+      </div>
+    </div>
+
+    <!-- CTA after steps -->
+    <div style="text-align:center; margin-top: 3rem;" class="fade-up">
+      <a href="https://wa.me/918979636730?text=Hi%20ShaadiStays!%20I%20have%20a%20hotel%20quote%20I%27d%20like%20you%20to%20look%20at." target="_blank" rel="noopener" class="btn-wa-big">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Send Us Your Quote on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     SAVINGS CALCULATOR
+=========================== -->
+<section class="section-sm problem-bg" id="calculator">
+  <div class="container">
+    <div class="problem-headline fade-up" style="margin-bottom:2rem">
+      <span class="section-eyebrow">See your potential savings</span>
+      <h2>How Much Could You Save?</h2>
+      <p>Enter your hotel quote details below for an estimate.</p>
+    </div>
+    <div class="calc-wrap fade-up">
+      <div class="calc-row">
+        <label>Hotel quote for rooms (₹ total)</label>
+        <input type="number" class="calc-input" id="calc-rooms" placeholder="e.g. 500000" min="0" />
+      </div>
+      <div class="calc-row">
+        <label>Banquet / F&amp;B quote (₹ total, optional)</label>
+        <input type="number" class="calc-input" id="calc-fnb" placeholder="e.g. 300000" min="0" />
+      </div>
+      <div class="calc-result" id="calc-result">
+        <div class="you-pay-label">Your estimated minimum saving</div>
+        <div class="saving-amt" id="calc-saving">₹0</div>
+        <div class="saving-sub" id="calc-sub">Enter your quote above to see your potential saving</div>
+      </div>
+      <button class="calc-cta" id="calc-cta-btn">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Get This Saving — WhatsApp Us Now
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     WHY / OBJECTION CRUSHERS
+=========================== -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div class="problem-headline fade-up">
+      <span class="section-eyebrow">Why ShaadiStays</span>
+      <h2>Why 400+ Families Trusted Us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div>
+          <h3>Guaranteed savings or zero fee</h3>
+          <p>We only charge when we deliver. If we can't beat your hotel quote, you pay us absolutely nothing — no awkward conversations.</p>
+        </div>
+      </div>
+      <div class="why-card fade-up delay-1">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+        <div>
+          <h3>Success fee, not a fixed charge</h3>
+          <p>Our fee is 7–10% of the booking value at the better rate. You keep 90%+ of the saving — we only earn a small share of what we create.</p>
+        </div>
+      </div>
+      <div class="why-card fade-up delay-2">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div>
+          <h3>We do the chasing, not you</h3>
+          <p>All hotel communication, follow-ups, and confirmations go through us. You focus on the celebrations — we handle the back-and-forth.</p>
+        </div>
+      </div>
+      <div class="why-card fade-up delay-3">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div>
+          <h3>Fully transparent — no inflated baselines</h3>
+          <p>We only negotiate against the verified quote you provide. No gimmicks, no fake "original price" tricks. Real savings from real negotiations.</p>
+        </div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div>
+          <h3>7,500+ hotels across India</h3>
+          <p>Pre-contracted rates with 7,500+ wedding hotels in India. Whether it's a Taj, Oberoi, ITC, or an independent resort — we have a rate.</p>
+        </div>
+      </div>
+      <div class="why-card fade-up delay-1">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div>
+          <h3>Rooms AND banquets — both</h3>
+          <p>Most people only think about rooms. We also negotiate banquet F&amp;B packages — per-plate costs, menu deals, minimum guarantees.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     TESTIMONIALS
+=========================== -->
+<section class="section problem-bg">
+  <div class="container">
+    <div class="problem-headline fade-up">
+      <span class="section-eyebrow">Real families, real savings</span>
+      <h2>What Wedding Families Say</h2>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card fade-up">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">"The Taj had quoted us ₹9,500 per room per night. ShaadiStays came back with <strong>₹6,800</strong> — same hotel, same dates. I honestly couldn't believe it. Worth every rupee of their fee."</p>
+        <div class="review-author">
+          <div class="review-avatar">RK</div>
+          <div>
+            <div class="review-name">Rajesh K.</div>
+            <div class="review-meta">Father of bride · Delhi</div>
+          </div>
+        </div>
+        <div class="review-saving">Saved ₹1.95 Lakh on room block</div>
+      </div>
+
+      <div class="review-card fade-up delay-1">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">"We had a destination wedding in Udaipur. ShaadiStays handled both rooms and the banquet package. <strong>Total saving was over ₹4 Lakhs.</strong> Their fee was a fraction of that. Would 100% recommend."</p>
+        <div class="review-author">
+          <div class="review-avatar">PM</div>
+          <div>
+            <div class="review-name">Priya M.</div>
+            <div class="review-meta">Bride · Mumbai</div>
+          </div>
+        </div>
+        <div class="review-saving">Saved ₹4.2 Lakh on rooms + banquet</div>
+      </div>
+
+      <div class="review-card fade-up delay-2">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">"I was sceptical — I thought 'how much can they really save?' Turned out the answer was <strong>₹2.8 Lakhs</strong> on a 45-room block. The whole process was done over WhatsApp in 2 days. Very smooth."</p>
+        <div class="review-author">
+          <div class="review-avatar">AS</div>
+          <div>
+            <div class="review-name">Amit S.</div>
+            <div class="review-meta">Father of groom · Bengaluru</div>
+          </div>
+        </div>
+        <div class="review-saving">Saved ₹2.8 Lakh on 45-room block</div>
+      </div>
+
+    </div>
+    <p style="text-align:center; margin-top:1.5rem; font-size:0.8125rem; color:var(--muted-fg);">*Testimonials are illustrative of typical results based on our service experience.</p>
+  </div>
+</section>
+
+
+<!-- ===========================
+     FAQ MINI
+=========================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="problem-headline fade-up">
+      <span class="section-eyebrow">Quick answers</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq-mini-list">
+
+      <div class="faq-mini-item fade-up">
+        <button class="faq-mini-q">
+          <span>Is this really free if you don't save me money?</span>
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-mini-a">
+          <p>Yes, 100%. We only charge a success fee if we deliver a lower rate than your hotel quote. If we can't beat it, you owe us nothing. No hidden charges, no minimum fees.</p>
+        </div>
+      </div>
+
+      <div class="faq-mini-item fade-up delay-1">
+        <button class="faq-mini-q">
+          <span>What do I need to get started?</span>
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-mini-a">
+          <p>Just the official quote you've received from your hotel — a WhatsApp screenshot, email, or PDF. Share it with us on WhatsApp and we'll take it from there.</p>
+        </div>
+      </div>
+
+      <div class="faq-mini-item fade-up delay-2">
+        <button class="faq-mini-q">
+          <span>What hotels do you work with?</span>
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-mini-a">
+          <p>We have pre-contracted rates with 7,500+ hotels across India — including Taj, Oberoi, ITC, Marriott, Hyatt, Leela, and independent properties. If it's a 4★ or 5★ hotel in India, we almost certainly have a rate for it.</p>
+        </div>
+      </div>
+
+      <div class="faq-mini-item fade-up delay-3">
+        <button class="faq-mini-q">
+          <span>How much does ShaadiStays charge?</span>
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-mini-a">
+          <p>Our fee is 10% of the total booking value at the negotiated rate for rooms-only or banquet-only, and just 7% when you book both rooms and banquet together. This is baked into the final price — no separate invoice.</p>
+        </div>
+      </div>
+
+      <div class="faq-mini-item fade-up">
+        <button class="faq-mini-q">
+          <span>Will the hotel still support us fully on our wedding day?</span>
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-mini-a">
+          <p>Absolutely — and this is a question we hear often, so it's worth answering clearly. ShaadiStays only handles the <strong>commercial negotiation</strong> — room rates and banquet package pricing. The hotel's obligation to deliver flawless service on your wedding day is entirely between you and the hotel, exactly as it would be if you booked directly. Hotels are contractually bound to honour every commitment in the booking agreement regardless of how the rate was secured. In fact, because we route the booking formally, your terms are better documented than a verbal direct booking. Your wedding coordinator, banquet manager, and hotel operations team remain fully accountable to you throughout — we simply made the price fairer.</p>
+        </div>
+      </div>
+
+      <div class="faq-mini-item fade-up">
+        <button class="faq-mini-q">
+          <span>Will the hotel know I used a consultant?</span>
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-mini-a">
+          <p>Once you engage us, we communicate with the hotel on your behalf. Hotels work with B2B intermediaries routinely — it's entirely standard practice and does not affect your service or relationship with the hotel.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     FINAL CTA
+=========================== -->
+<section class="final-cta">
+  <div class="container">
+    <div class="fade-up">
+      <h2>Already Got a Hotel Quote?<br/><em>Let's Beat It.</em></h2>
+      <p>Share your quote on WhatsApp right now. We'll come back with a lower number — or you pay nothing.</p>
+      <div class="final-cta-btns">
+        <a href="https://wa.me/918979636730?text=Hi%20ShaadiStays!%20I%27d%20like%20you%20to%20negotiate%20my%20wedding%20hotel%20quote.%20Here%20are%20my%20details%3A" target="_blank" rel="noopener" class="btn-wa-big">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          WhatsApp Us Your Quote
+        </a>
+        <a href="tel:+918979636730" class="btn-call-big">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.72 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call +91 89796 36730
+        </a>
+      </div>
+      <div class="final-guarantee">
+        <svg viewBox="0 0 24 24" style="flex-shrink:0; margin-top:1px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>No savings = no fee &nbsp;·&nbsp; Results in 48 hours &nbsp;·&nbsp; Zero commitment to proceed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     FOOTER MINI
+=========================== -->
+<footer class="lp-footer">
+  <div class="container">
+    <div class="lp-footer-inner">
+      <p>&copy; 2025 ShaadiStays · A unit of Aimeo Innovations, Delhi NCR</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp;
+        <a href="index.html">Main Website</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===========================
+     STICKY MOBILE BAR
+=========================== -->
+<div class="sticky-bar">
+  <div class="sticky-bar-inner">
+    <a href="https://wa.me/918979636730?text=Hi%20ShaadiStays!%20I%27d%20like%20to%20save%20on%20my%20wedding%20hotel." target="_blank" rel="noopener" class="sticky-btn-wa">
+      <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Get My Free Quote
+    </a>
+    <a href="tel:+918979636730" class="sticky-btn-call" aria-label="Call us">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.72 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+</div>
+
+
+<!-- ===========================
+     SCRIPTS
+=========================== -->
+<script>
+(function() {
+
+  /* --- Scroll fade-in --- */
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(function(el) { obs.observe(el); });
+
+  /* --- FAQ accordion --- */
+  document.querySelectorAll('.faq-mini-q').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-mini-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-mini-item.open').forEach(function(o) { o.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  /* --- Savings calculator --- */
+  var WA = 'https://wa.me/918979636730?text=';
+  function fmt(n) {
+    if (n >= 10000000) return '₹' + (n/10000000).toFixed(2) + ' Cr';
+    if (n >= 100000)   return '₹' + (n/100000).toFixed(2) + ' Lakh';
+    return '₹' + Math.round(n).toLocaleString('en-IN');
+  }
+  function calcSavings() {
+    var rooms = parseFloat(document.getElementById('calc-rooms').value) || 0;
+    var fnb   = parseFloat(document.getElementById('calc-fnb').value)   || 0;
+    var total = rooms + fnb;
+    var minSaving = total * 0.10;
+    var maxSaving = total * 0.40;
+    var savingEl = document.getElementById('calc-saving');
+    var subEl    = document.getElementById('calc-sub');
+    if (total === 0) {
+      savingEl.textContent = '₹0';
+      subEl.textContent = 'Enter your quote above to see your potential saving';
+      return;
+    }
+    savingEl.textContent = fmt(minSaving) + ' – ' + fmt(maxSaving);
+    subEl.textContent = 'Based on our typical 10–40% savings range on a total quote of ' + fmt(total);
+  }
+  document.getElementById('calc-rooms').addEventListener('input', calcSavings);
+  document.getElementById('calc-fnb').addEventListener('input', calcSavings);
+  document.getElementById('calc-cta-btn').addEventListener('click', function() {
+    var rooms = document.getElementById('calc-rooms').value;
+    var fnb   = document.getElementById('calc-fnb').value;
+    var msg = 'Hi ShaadiStays! I used your savings calculator.\n\n';
+    if (rooms) msg += '🏨 Room block quote: ₹' + parseFloat(rooms).toLocaleString('en-IN') + '\n';
+    if (fnb)   msg += '🍽 F&B quote: ₹' + parseFloat(fnb).toLocaleString('en-IN') + '\n';
+    msg += '\nCan you help me get a better rate?';
+    window.open(WA + encodeURIComponent(msg), '_blank');
+  });
+
+})();
+</script>
+
+</body>
+</html>
